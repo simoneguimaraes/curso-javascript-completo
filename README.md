@@ -46,7 +46,8 @@ alert(‘Seja bem-vindo/a)
 ### Como criar comentários?
 
 //            → uma única linha de código
-<br>/*    */    → mais de uma linha de código
+<br>/*    
+<br>*/    → mais de uma linha de código
 
 ### O que são variáveis?
 
