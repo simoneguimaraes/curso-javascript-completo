@@ -38,6 +38,10 @@
 alert(‘Seja bem-vindo/a)
 <br>confirm(‘Você já é nosso aluno?’)
 <br>prompt(‘Digite o seu nome’)
+<br>
+<br>O HTML é dividido entre as tagas <head> e <body>
+<br>O CSS pode ser inserido no HTML com a tag <style>
+<br>O JavaScript pode ser inserido no HTML com a tag <script>
 
 # Módulo 2 – Conhecendo o Javascript
 
