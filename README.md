@@ -3,7 +3,7 @@
 ## Aula 1 – O que o Javascript é capaz de fazer?
 
 ### O que é a linguagem Javascript/ECMAScript?
-### O que é um cliente e um servidor??
+### O que é um cliente e um servidor?
 ### Para que servem as tecnologias HTML5, CSS3 e Javascript?
 ### Cite 4 sites que utilizam a linguagem JavaScript nos seus códigos.
 
