@@ -43,7 +43,7 @@ alert(‘Seja bem-vindo/a)
 <br>O CSS pode ser inserido no HTML com a tag <style>
 <br>O JavaScript pode ser inserido no HTML com a tag <script>
 
-# Módulo 2 – Conhecendo o Javascript
+# Módulo 2 – Comandos Básicos do Javascript
 
 ## Aula 5 – Variáveis e Tipos Primitivos
 
