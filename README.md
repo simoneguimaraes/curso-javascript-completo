@@ -130,3 +130,9 @@ typeof  → saber qual é o tipo da variavel
 ### Consegue entender o que significa colocar um valor null dentro de uma variável em Javascript?
 
 Null é representa um valor nulo ou vazio, e aponta para um objeto inexistente.
+  
+
+
+  
+  
+# Módulo 3 – Entendendo o DOM
