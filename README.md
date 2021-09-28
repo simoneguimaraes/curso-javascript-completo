@@ -66,9 +66,9 @@ A vaga a1 = carro1
 <br>a1 = null
 <br>(a vaga está nula)
 <br>
-<br>var n1 = 5
-<br>var n2 = 8.5
-<br>var n3 = 15 
+<br>var n1 = 5      → int: número inteiro
+<br>var n2 = 8.5    → float: número real
+<br>var n3 = 15     → int: número inteiro
 <br>
 <br>var s1 = “São Paulo”
 <br>var s2 = ‘Lumpa’
