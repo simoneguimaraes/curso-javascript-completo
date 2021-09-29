@@ -458,7 +458,8 @@ var p1 = window.document.getElementsByTagName(“p”)[0] → para selecionar o 
 document.write(“Está escrito nesse parágrafo: ” + p1.innerHTML)
 
 var p2 = window.document.getElementByTagName(‘p’)[1] → para selecionar o segundo parágrafo
-document.write(“Está escrito nesse parágrafo: ” + p1.innerText) → innerText não leva a formatação. O innerHTML leva a formatação.
+document.write(“Está escrito nesse parágrafo: ” + p1.innerText) 
+→ innerText não leva a formatação. O innerHTML leva a formatação.
 
 // para editar os elementos no javascript
 p1.style.color = ‘blue’
