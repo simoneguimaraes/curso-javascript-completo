@@ -264,12 +264,12 @@ var x = 4
 ## Aula 8 – Operadores (parte 2)
 	
 ### Relacionais
-- >   → maior
-- <    → menor
-- >=  → maior ou igual
-- <=  → menor ou igual
-- ==  → igual
-- !=   → diferente
+>   → maior
+<br><    → menor
+<br>>=  → maior ou igual
+<br><=  → menor ou igual
+<br>==  → igual
+<br>!=   → diferente
 
 #### Exemplos:
 preço >= 200.50
@@ -324,8 +324,7 @@ idade >= 15 && idade <= 17
 <br>salario > 2500 && sexo != ‘masculino’
 
 ### Ordem de precedência das operações
-
-<br>Primeiro ele faz os operadores aritméticos, depois relacionais e depois lógicos.
+Primeiro ele faz os operadores aritméticos, depois relacionais e depois lógicos.
 <br>Primeiro ele faz o NÃO, depois o E, depois o OU. 
 <br>
 <br>Aritméticos > Relacionais > Lógicos (Não > E > OU)
