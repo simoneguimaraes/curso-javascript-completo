@@ -136,3 +136,7 @@ Null é representa um valor nulo ou vazio, e aponta para um objeto inexistente.
   
   
 # Módulo 3 – Entendendo o DOM
+
+  
+  
+  
