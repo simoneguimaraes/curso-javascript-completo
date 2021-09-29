@@ -214,9 +214,9 @@ Exemplo:
 
 ## Aula 7 – Operadores (parte 1)
 	
-### Quais são os operadores do Javascript?
+Quais são os operadores do Javascript?
 
-#### Aritméticos
+### Aritméticos
 3 + 2 → 5
 <br>3 - 2→ 5
 <br>3 * 2→ 6
@@ -224,7 +224,7 @@ Exemplo:
 <br>3 % 2→ 1
 <br>3 ** 2→ 9
 
-##### Atribuição
+### Atribuição
 var a = 5 + 3    →8
 <br>var b = a % 5  → 3 
 <br>var c = 5 * c ** 2 → 45
@@ -232,47 +232,142 @@ var a = 5 + 3    →8
 <br>var e = 6 * 2 / d → 2
 <br>var f = b % e + 4 / e → 3
 
-##### Auto-atribuições
+#### Auto-atribuições
 
 var n = 3 → n = 3
 
 <br>n = n + 3 → n = 7
 <br>n = n – 5 → n = 2
 
-##### Simplificando as operações
+#### Simplificando as operações
 
 n = n + 3 → n+= 3
 <br>n = n – 5 → n -= 5 
 
-#### Relacionais
-
-#### Lógicos
-
-#### Ternário
-
-#### Qual a ordem de precedência dos operadores em JavaScript?
+### Qual a ordem de precedência dos operadores em JavaScript?
 
 Parêntesis, potência, multiplicação, divisão, resto, adição, subtração.
 <br>5 + 3 / 2 → 5 + (3 / 2) → 6.5
 
-#### Como usar os operadores de incremento (pré-incremento e pós-incremento) no JavaScript?
+### Como usar os operadores de incremento (pré-incremento e pós-incremento) no JavaScript?
 
-##### Pré-incremento
+#### Pré-incremento
 var x = 5
 <br>x = x + 1 → x++ → 6
 <br>x = x – 1 →  x--  → 5
 
-##### Pós-incremento
+#### Pós-incremento
 var x = 4
 <br>x = x + 1 → ++x → 5
 <br>x = x – 1 →  --x  → 4
 
-
 ## Aula 8 – Operadores (parte 2)
-
 	
+### Relacionais
+- >   → maior
+- <    → menor
+- >=  → maior ou igual
+- <=  → menor ou igual
+- ==  → igual
+- !=   → diferente
 
-  
+#### Exemplos:
+preço >= 200.50
+<br>idade < 18
+<br>curso == ‘Javascript’
+<br>n1 != n2
+
+#### Identidade:
+5 == 5    → true
+<br>5 == ‘5’  → true (é igual? O valor é igual.)
+<br>5 === ‘5’  → falso (é idêntico? O valor e tipo não são iguais.)
+<br>5 === ‘5’  → true (é idêntico? O valor e tipo são iguais.)
+
+### Lógicos
+
+#### !  → negação
+
+! true →false
+<br>! false → true
+
+#### &&  → conjunção (E)
+
+true && true → true
+<br>true && false → false
+<br>false && true → false
+<br>false && false → false
+<br>
+<br>A condição só me satisfaz se as duas forem verdadeiras.
+
+#### ||  → disjunção (OU)
+
+true && true → true
+<br>true && false → true
+<br>false && true → true
+<br>false && false → false
+<br>
+<br>A condição me satisfaz se pelo menos um for verdadeiro.
+
+##### Exemplo 1:
+var a = 5
+<br>var b = 8
+<br>
+<br>a > b && b % 2 == 0 
+<br>false  &&  true → false
+<br>
+<br>a < b || b / 2 == 2 
+<br>true  ||  false → true
+
+#### Exemplo 2:
+idade >= 15 && idade <= 17
+<br>estado == ‘RJ’ || estado == ‘SP’
+<br>salario > 2500 && sexo != ‘masculino’
+
+### Ordem de precedência das operações
+
+<br>Primeiro ele faz os operadores aritméticos, depois relacionais e depois lógicos.
+<br>Primeiro ele faz o NÃO, depois o E, depois o OU. 
+<br>
+<br>Aritméticos > Relacionais > Lógicos (Não > E > OU)
+
+### Ternário
+
+?
+<br>:
+<br>
+<br>teste ? true : false
+<br>media >= 7 ? ‘Aprovado’ : ‘Reprovado’
+
+#### Exemplo 1:
+var media = 9
+<br>
+<br>media >= 7 ? ‘Aprovado’ : ‘Reprovado’      
+<br>→ ‘Aprovado’
+<br>
+<br>media -= 3     
+<br>media >= 7 ? ‘Aprovado’ : ‘Reprovado’      
+<br>→ ‘Reprovado’
+
+#### Exemplo 2:
+
+var x = 8
+<br>
+<br>var res = x % 2 == 0 ? 5 : 9
+<br>
+<br>como (x % 2 == 0) é true 
+<br>→ 5
+
+#### Exemplo 3:
+
+var idade = 19
+<br>var entradaBar = idade >= 18 ? ‘Pode entrar.’ : ‘Não pode entrar.’
+<br>entradaBar
+<br>→ ‘Pode entrar.’
+<br>
+<br>idade -= 5
+<br>var entradaBar = idade >= 18 ? ‘Pode entrar.’ : ‘Não pode entrar.’
+<br>entradaBar
+<br>→ ‘Não pode entrar.’
   
 # Módulo 3 – Entendendo o DOM
 
