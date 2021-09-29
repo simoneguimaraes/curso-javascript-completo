@@ -407,6 +407,7 @@ A raiz dentro do navegador se chama window.
 
 ### Como usar o Javascript para manipular o DOM?
 
+```
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -429,6 +430,7 @@ A raiz dentro do navegador se chama window.
 	window.document.write(‘Olá mundo’)
 	</script>
 </body>
+```
 
 ### Para quem servem os elementos Parent e Child em um DOM?
 
