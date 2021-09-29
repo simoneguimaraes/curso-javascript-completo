@@ -214,8 +214,60 @@ Exemplo:
 
 ## Aula 7 – Operadores (parte 1)
 	
-	
-  
+### Quais são os operadores do Javascript?
+
+#### Aritméticos
+3 + 2 → 5
+<br>3 - 2→ 5
+<br>3 * 2→ 6
+<br>3 / 2→ 1.5
+<br>3 % 2→ 1
+<br>3 ** 2→ 9
+
+##### Atribuição
+var a = 5 + 3    →8
+<br>var b = a % 5  → 3 
+<br>var c = 5 * c ** 2 → 45
+<br>var d = 10 – a / 2  → 6
+<br>var e = 6 * 2 / d → 2
+<br>var f = b % e + 4 / e → 3
+
+##### Auto-atribuições
+
+var n = 3 → n = 3
+
+<br>n = n + 3 → n = 7
+<br>n = n – 5 → n = 2
+
+##### Simplificando as operações
+
+n = n + 3 → n+= 3
+<br>n = n – 5 → n -= 5 
+
+#### Relacionais
+
+#### Lógicos
+
+#### Ternário
+
+#### Qual a ordem de precedência dos operadores em JavaScript?
+
+Parêntesis, potência, multiplicação, divisão, resto, adição, subtração.
+<br>5 + 3 / 2 → 5 + (3 / 2) → 6.5
+
+#### Como usar os operadores de incremento (pré-incremento e pós-incremento) no JavaScript?
+
+##### Pré-incremento
+var x = 5
+<br>x = x + 1 → x++ → 6
+<br>x = x – 1 →  x--  → 5
+
+##### Pós-incremento
+var x = 4
+<br>x = x + 1 → ++x → 5
+<br>x = x – 1 →  --x  → 4
+
+
 ## Aula 8 – Operadores (parte 2)
 
 	
