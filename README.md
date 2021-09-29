@@ -331,7 +331,6 @@ idade >= 15 && idade <= 17
 <br>Aritméticos > Relacionais > Lógicos (Não > E > OU)
 
 ### Ternário
-
 ?
 <br>:
 <br>
