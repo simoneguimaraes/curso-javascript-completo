@@ -369,6 +369,133 @@ var idade = 19
   
 # Módulo 3 – Entendendo o DOM
 
+## Aula 9 – Introdução ao DOM
+	
+### O que significa a sigla DOM? 
+Document Object Model
+
+### Para que serve o Document Object Model?
+- Modelo de objetos para documentos. 
+- Conjunto de objetos dentro do navegador que vai dar acesso aos componentes internos do website.
+- Não funciona no Node.js, está presente no Javascript dentro do navegador.
+
+### Como criar uma árvore DOM para o seu site?
+A raiz dentro do navegador se chama window.
+<br>
+<br>Alguns objetos do window:
+- locations → qual é a localizacao do site (ex: url, pagina anterior, pagina atual)
+- document → documento atual
+	<ul>
+        <li>HTML (é parent de head e body)</li>
+		<ul>
+            <li>head (é child do HTML)</li>
+			<ul>
+                <li>meta</li>
+                <li>title</li>
+			</ul>
+            <li>body (é child do HTML)</li>
+            <li>h1</li>
+            <li>p</li>
+            <li>p</li>
+			<ul>
+                <li>strong</li>
+			</ul>
+            <li>div</li>
+		</ul>
+	</ul>
+- history → guarda de onde você veio e pra onde você vai, facilitando a navegação no site
+
+### Como usar o Javascript para manipular o DOM?
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+	body {
+	background: rgb(40, 17, 75);
+	color: white;
+	font: normal 18pt Arial;
+	}
+	</style>
+</head>
+<body>
+	<h1>Estudos DOM</h1>
+	<p>Aqui vai o resultado</p>
+	<p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+	<div>Clique em mim</div>
+	<script>
+	window.document.write(‘Olá mundo’)
+	</script>
+</body>
+
+### Para quem servem os elementos Parent e Child em um DOM?
+
+Elemento é todo item que aparece na árvore DOM.
+<br>HTML é parent de Body e é child de Document.
+
+### Como usar métodos de acesso ao DOM no Javascript?
+
+Você pode selecionar os elementos para navegar dentro da árvore DOM.
+<br>
+<br>Alguns métodos de acesso ao DOM são por:
+
+#### 1. Marca (TagName)
+getElementByTagName()
+<br>var p1 = window.document.getElementsByTagName(“p”)[0] → para selecionar o primeiro parágrafo
+<br>document.write(“Está escrito nesse parágrafo: ” + p1.innerHTML)
+<br>
+<br>var p2 = window.document.getElementByTagName(‘p’)[1] → para selecionar o segundo parágrafo
+<br>document.write(“Está escrito nesse parágrafo: ” + p1.innerText) → innerText não leva a formatação. O innerHTML leva a formatação.
+<br>
+<br>// para editar os elementos no javascript
+<br>p1.style.color = ‘blue’
+<br>
+<br>var corpo = window.document.body
+<br>corpo.style.background = ‘black’
+
+#### 2. ID
+getElementById()
+<br>
+<br><div id=’msg’>Clique em mim</div>
+<br>
+<br>var d = window.document.getElementById(‘msg’)
+<br>d.style.background = ‘green’
+<br>d.innerText = ‘Estou aguardando...’
+
+#### 3. Nome
+getElementByName()
+<br>
+<br><div name=’msg’>Clique em mim</div>
+<br>
+<br>var c = window.document.getElementsByName(‘msg’)[0]
+<br>c.innerText = ‘Prazo confirmado.’
+
+#### 4. Classe
+<br>getElementByClassName()
+<br>
+<br><div class=’msg’>Clique em mim</div>
+
+#### 5. Seletor
+<br>querySelector
+<br>
+<br><div id=’msg’>Clique em mim</div>
+<br>
+<br>var d = window.document.querySelector(‘div#msg’)
+<br>d.style.background = ‘blue’
+<br>
+<br><strong>id → representada por #</strong>
+<br><strong>class → representada por .</strong>
+<br>
+<br><div class=’msg’>Clique em mim</div>
+<br>
+<br>var d = window.document.querySelector(‘div.msg’)
+<br>d.style.background = ‘blue’
+	
+## Aula 10 – Eventos DOM
   
-  
+
+	
+# Módulo 4 – 
   
