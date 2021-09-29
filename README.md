@@ -132,22 +132,22 @@ typeof  → saber qual é o tipo da variavel
 Null é representa um valor nulo ou vazio, e aponta para um objeto inexistente.
 
   
-### Aula 6 – Tratamento de dados
+## Aula 6 – Tratamento de dados
 
-#### Como guardar o resultado de um prompt dentro de uma variável?
+### Como guardar o resultado de um prompt dentro de uma variável?
 
 var nome = prompt(‘Qual é o seu nome’)
 
-#### Concatenação: para juntar a string com a variável
+### Concatenação: para juntar a string com a variável
 alert(‘É um prazer te conhecer, ‘ + nome)  
 
-#### Como somar variáveis?
+### Como somar variáveis?
 var num1 = prompt(‘Digite um número: ‘)
 var num2 = prompt(‘Digite outro número: ‘)
 var sum = num1 + num2
 alert(‘A soma dos valores é “ + sum)
 
-#### Como manipular dados e fazer a conversão?
+### Como manipular dados e fazer a conversão?
 
 O sinal de + serve tanto para somar quanto para concatenar:
     • soma: number + number
@@ -155,7 +155,7 @@ O sinal de + serve tanto para somar quanto para concatenar:
 
 O prompt retorna, por padrão, uma string. Então é preciso converter as variáveis num1 e num2 para number.
 
-#### Como converter String para Número em JavaScript?
+### Como converter String para Número em JavaScript?
 
 Para converter string → número:
     • Number.parseInt(n): converte para número inteiro
@@ -163,7 +163,7 @@ Para converter string → número:
 
 Na versão atualizada do Javascript, ele faz a conversão de forma automática: Number(n)
 
-#### Como converter Número para String em JavaScript?
+### Como converter Número para String em JavaScript?
 
 Para converter número → string:
     • String(n)
@@ -175,18 +175,18 @@ var s = ‘JavaScript’
 ‘Eu estou aprendendo ‘ + s         // usa concatenação
 `Eu estou aprendendo ${s}`       // usa template string
 
-#### Interpolação (Template string)
+### Interpolação (Template string)
     • Nova forma de criar strings e tornar o seu código um pouco mais legível
     • `O aluno ${nome} com ${idade} tirou a nota ${nota} ` 
 
-#### Formatando strings:
+### Formatando strings:
 
 var s = ‘Javascript’
     • s.lenght                     → quantos caracteres a string tem
     • s.toUpperCase()       → tudo para maiúsculas
     • s.toLowerCase()      → tudo para minúsculas
 
-#### Consegue formatar um número para que ele se pareça com um valor monetário?
+### Consegue formatar um número para que ele se pareça com um valor monetário?
 
 Exemplo:
 <body>
@@ -212,10 +212,13 @@ Exemplo:
   </script>
 </body>
 
-### Aula 7
+## Aula 7 – Operadores (parte 1)
+	
+	
   
-### Aula 8
+## Aula 8 – Operadores (parte 2)
 
+	
 
   
   
