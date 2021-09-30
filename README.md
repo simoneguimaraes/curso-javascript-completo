@@ -1,4 +1,4 @@
-<img src='https://media2.giphy.com/media/11JTxkrmq4bGE0/200.webp?cid=ecf05e47erpodjp6r2y7x1zar3noxfonwqkwkyzn379ty4pk&rid=200.webp&ct=g' alt='cat studying with laptop' width='200px'>
+<img src='https://media4.giphy.com/media/XWeJDaxYa1YrK/200.webp?cid=ecf05e47gzxb88llpqsmxgivmfarhoqa97ka9finjdkbf9g3&rid=200.webp&ct=g' alt='boy dancing in front of the pc' width='200px'>
 
 # Módulo 2 – Comandos Básicos do Javascript
 
