@@ -1,3 +1,5 @@
+<img src='https://media2.giphy.com/media/11JTxkrmq4bGE0/200.webp?cid=ecf05e47erpodjp6r2y7x1zar3noxfonwqkwkyzn379ty4pk&rid=200.webp&ct=g' alt='cat studying with laptop' width='200px'>
+
 # Módulo 2 – Comandos Básicos do Javascript
 
 ## Aula 5 – Variáveis e Tipos Primitivos
