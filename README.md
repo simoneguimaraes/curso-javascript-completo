@@ -466,7 +466,7 @@ d.style.background = ‘blue’
 
 ### Como funciona o DOM com Javascript?
 
-Evento é tudo o que possa acontecer com o elemento. Por exemplo, uma <div>.
+Evento é tudo o que possa acontecer com o elemento. Por exemplo, uma ```<div>```.
 
 #### Exemplo 1: 
 ```
@@ -491,12 +491,13 @@ Evento é tudo o que possa acontecer com o elemento. Por exemplo, uma <div>.
 ```
 	
 #### Eventos de mouse
-- mouseenter: dispara quando o mouse chegar dentro da <div>;
-- mousemove: dispara enquanto o mouse estiver movendo dentro da <div>;
+- mouseenter: dispara quando o mouse chegar dentro da ```<div>```;
+- mousemove: dispara enquanto o mouse estiver movendo dentro da ```<div>```;
 - mousedown: dispara quando clicou e segurou o mouse;
 - mouseup: dispara no momento em que soltar o mouse;
 - click: dispara no momento do click inteiro;
-- mouseout: dispara enquanto o mouse estiver fora da <div>;
+- mouseout: dispara enquanto o mouse estiver fora da ```<div>```;
+
 Para conhecer mais tipos de eventos: https://developer.mozilla.org/pt-BR/docs/Web/Events
 
 ### Como criar funções em Javascript?
