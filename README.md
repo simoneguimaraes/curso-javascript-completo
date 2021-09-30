@@ -463,8 +463,148 @@ var d = window.document.querySelector(‘div.msg’)
 d.style.background = ‘blue’
 ```
 ## Aula 10 – Eventos DOM
-  
 
+### Como funciona o DOM com Javascript?
+
+Evento é tudo o que possa acontecer com o elemento. Por exemplo, uma <div>.
+
+#### Exemplo 1: 
+```
+<head>
+  <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(93, 136, 37);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id='area'>
+        Interaja...
+    </div>
+</body>
+```
+	
+#### Eventos de mouse
+- mouseenter: dispara quando o mouse chegar dentro da <div>;
+- mousemove: dispara enquanto o mouse estiver movendo dentro da <div>;
+- mousedown: dispara quando clicou e segurou o mouse;
+- mouseup: dispara no momento em que soltar o mouse;
+- click: dispara no momento do click inteiro;
+- mouseout: dispara enquanto o mouse estiver fora da <div>;
+Para conhecer mais tipos de eventos: https://developer.mozilla.org/pt-BR/docs/Web/Events
+
+### Como criar funções em Javascript?
+
+Função: conjunto de códigos que vai ser executado quando o evento ocorrer.
+```
+function ação(parâmetro){
+bloco
+}
+```
+	
+### Como ligar uma função a um evento em um formulário HTML5 usando JavaScript?
+
+Exemplo:
+```
+<body>
+    <div id='area' onclick='clicar()' onmouseenter='entrar()' onmouseout='saiu()'>
+        Interaja...
+    </div>
+    <script>
+        var area = window.document.getElementById('area')
+
+        function clicar(){
+            area.innerText = 'Clicou'
+            area.style.background = 'red'
+        }
+        function entrar(){
+            area.innerText = 'Entrou'
+        }
+        function saiu(){
+            area.innerText = 'Saiu'
+            area.style.background = 'green'
+        }
+    </script>
+</body>
+```
+ou também pode ser feito assim:
+```
+<script>
+        var area = window.document.getElementById('area')
+
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar(){
+            area.innerText = 'Clicou'
+            area.style.background = 'red'
+        }
+        function entrar(){
+            area.innerText = 'Entrou'
+            area.style.background = 'yellow'
+        }
+        function sair(){
+            area.innerText = 'Saiu'
+            area.style.background = 'green'
+        }
+    </script>
+```
+### Como descobrir erros no Javascript?
+
+Clicar com o botão direito, ir em ‘Inspect’, entrar no Console e ver o que está escrito.
+```
+Exemplo: ‘Uncaught TypeError? Cannot read property ‘getElementById’ of undefined at exemplo6.html:26’
+```
+Isso que dizer que ele não conseguiu ler o elemento ‘getElementById’ na linha 26 (ou para cima).
+
+### Como pegar valores dentro de caixas de texto e fazer cálculos com eles?
+
+#### Exemplo:
+```
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id='res'>Resultado</div>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é: <strong>${s}</strong>`
+        }
+    </script>
+</body>
+```
 	
 # Módulo 4 – 
   
