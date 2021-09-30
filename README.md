@@ -1,8 +1,8 @@
 <img src='https://media4.giphy.com/media/XWeJDaxYa1YrK/200.webp?cid=ecf05e47gzxb88llpqsmxgivmfarhoqa97ka9finjdkbf9g3&rid=200.webp&ct=g' alt='boy dancing in front of the pc' width='200px'>
 
-# Módulo 2 – Comandos Básicos do Javascript
+# Módulo 1 – Comandos Básicos do Javascript
 
-## Aula 5 – Variáveis e Tipos Primitivos
+## Aula 1 – Variáveis e Tipos Primitivos
 
 ### Como criar comentários?
 ```
