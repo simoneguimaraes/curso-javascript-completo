@@ -611,3 +611,4 @@ Isso que dizer que ele não conseguiu ler o elemento ‘getElementById’ na lin
 	
 # Módulo 4 – 
   
+
