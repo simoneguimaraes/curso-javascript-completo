@@ -1,11 +1,11 @@
-<img src='https://media4.giphy.com/media/XWeJDaxYa1YrK/200.webp?cid=ecf05e47gzxb88llpqsmxgivmfarhoqa97ka9finjdkbf9g3&rid=200.webp&ct=g' alt='boy dancing in front of the pc' width='200px'>
+<img src='https://media4.giphy.com/media/XWeJDaxYa1YrK/200.webp?cid=ecf05e47gzxb88llpqsmxgivmfarhoqa97ka9finjdkbf9g3&rid=200.webp&ct=g' alt='boy dancing in front of the pc' width='150px'>
 
 # Módulo 1 – Comandos Básicos do Javascript
 
 ## Aula 1 – Variáveis e Tipos Primitivos
 
 ### Como criar comentários?
-```
+```javascript
 //  → uma única linha de código
 ```
 
@@ -21,7 +21,7 @@ A memória do computador tem espaços delimitados para receber valores (assim co
 
 ### Como declarar variáveis no Javascript?
 
-```
+```javascript
 A vaga a1 = carro1
 (leia: a vaga a1 recebe o carro1)
 a1 = carro2
@@ -93,7 +93,7 @@ var nome = prompt(‘Qual é o seu nome’)
 alert(‘É um prazer te conhecer, ‘ + nome)  
 
 ### Como somar variáveis?
-```
+```javascript
 var num1 = prompt(‘Digite um número: ‘)
 var num2 = prompt(‘Digite outro número: ‘)
 var sum = num1 + num2
@@ -141,7 +141,7 @@ var s = ‘Javascript’
 ### Consegue formatar um número para que ele se pareça com um valor monetário?
 
 Exemplo:
-```
+```javascript
 <body>
   <script>
 	var nome = prompt("Qual é o seu nome?")
@@ -235,7 +235,7 @@ x = x – 1 →  --x  → 4
 ```
 
 #### Exemplos:
-```
+```javascript
 preço >= 200.50
 idade < 18
 curso == ‘Javascript’
@@ -243,7 +243,7 @@ n1 != n2
 ```
 
 #### Identidade:
-```
+```javascript
 5 == 5    → true
 5 == ‘5’  → true (é igual? O valor é igual.)
 5 === ‘5’  → falso (é idêntico? O valor e tipo não são iguais.)
@@ -252,12 +252,12 @@ n1 != n2
 ### Lógicos
 
 #### !  → negação
-```
+```javascript
 ! true →false
 ! false → true
 ```
 #### &&  → conjunção (E)
-```
+```javascript
 true && true → true
 true && false → false
 false && true → false
@@ -266,7 +266,7 @@ false && false → false
 A condição só me satisfaz se as duas forem verdadeiras.
 ```
 #### ||  → disjunção (OU)
-```
+```javascript
 true && true → true
 true && false → true
 false && true → true
@@ -275,7 +275,7 @@ false && false → false
 A condição me satisfaz se pelo menos um for verdadeiro.
 ```
 ##### Exemplo 1:
-```
+```javascript
 var a = 5
 var b = 8
 
@@ -286,7 +286,7 @@ a < b || b / 2 == 2
 true  ||  false → true
 ```
 #### Exemplo 2:
-```
+```javascript
 idade >= 15 && idade <= 17
 estado == ‘RJ’ || estado == ‘SP’
 salario > 2500 && sexo != ‘masculino’
@@ -309,7 +309,7 @@ teste ? true : false
 media >= 7 ? ‘Aprovado’ : ‘Reprovado’
 ```
 #### Exemplo 1:
-```
+```javascript
 var media = 9
 
 media >= 7 ? ‘Aprovado’ : ‘Reprovado’      
@@ -320,7 +320,7 @@ media >= 7 ? ‘Aprovado’ : ‘Reprovado’
 → ‘Reprovado’
 ```
 #### Exemplo 2:
-```
+```javascript
 var x = 8
 
 var res = x % 2 == 0 ? 5 : 9
@@ -329,7 +329,7 @@ como (x % 2 == 0) é true
 → 5
 ```
 #### Exemplo 3:
-```
+```javascript
 var idade = 19
 var entradaBar = idade >= 18 ? ‘Pode entrar.’ : ‘Não pode entrar.’
 entradaBar
@@ -371,7 +371,7 @@ Alguns objetos do window:
 - history → guarda de onde você veio e pra onde você vai, facilitando a navegação no site
 ```
 ### Como usar o Javascript para manipular o DOM?
-```
+```javascript
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -406,7 +406,7 @@ Elemento é todo item que aparece na árvore DOM.
 Você pode selecionar os elementos para navegar dentro da árvore DOM.
 
 Alguns métodos de acesso ao DOM são por:
-```
+```javascript
 1. Marca (TagName)
 getElementByTagName()
 var p1 = window.document.getElementsByTagName(“p”)[0] → para selecionar o primeiro parágrafo
@@ -422,7 +422,7 @@ p1.style.color = ‘blue’
 var corpo = window.document.body
 corpo.style.background = ‘black’
 ```
-```
+```javascript
 2. ID
 getElementById()
 
@@ -432,7 +432,7 @@ var d = window.document.getElementById(‘msg’)
 d.style.background = ‘green’
 d.innerText = ‘Estou aguardando...’
 ```
-```
+```javascript
 3. Nome
 getElementByName()
 
@@ -441,13 +441,13 @@ getElementByName()
 var c = window.document.getElementsByName(‘msg’)[0]
 c.innerText = ‘Prazo confirmado.’
 ```
-```
+```javascript
 4. Classe
 getElementByClassName()
 
 <div class=’msg’>Clique em mim</div>
 ```
-```
+```javascript
 5. Seletor
 querySelector
 
@@ -471,7 +471,7 @@ d.style.background = ‘blue’
 Evento é tudo o que possa acontecer com o elemento. Por exemplo, uma ```<div>```.
 
 #### Exemplo 1: 
-```
+```javascript
 <head>
   <style>
         div#area {
@@ -505,7 +505,7 @@ Para conhecer mais tipos de eventos: https://developer.mozilla.org/pt-BR/docs/We
 ### Como criar funções em Javascript?
 
 Função: conjunto de códigos que vai ser executado quando o evento ocorrer.
-```
+```javascript
 function ação(parâmetro){
 bloco
 }
@@ -514,7 +514,7 @@ bloco
 ### Como ligar uma função a um evento em um formulário HTML5 usando JavaScript?
 
 Exemplo:
-```
+```javascript
 <body>
     <div id='area' onclick='clicar()' onmouseenter='entrar()' onmouseout='saiu()'>
         Interaja...
@@ -537,7 +537,7 @@ Exemplo:
 </body>
 ```
 ou também pode ser feito assim:
-```
+```javascript
 <script>
         var area = window.document.getElementById('area')
 
@@ -562,7 +562,7 @@ ou também pode ser feito assim:
 ### Como descobrir erros no Javascript?
 
 Clicar com o botão direito, ir em ‘Inspect’, entrar no Console e ver o que está escrito.
-```
+```javascript
 Exemplo: ‘Uncaught TypeError? Cannot read property ‘getElementById’ of undefined at exemplo6.html:26’
 ```
 Isso que dizer que ele não conseguiu ler o elemento ‘getElementById’ na linha 26 (ou para cima).
@@ -570,7 +570,7 @@ Isso que dizer que ele não conseguiu ler o elemento ‘getElementById’ na lin
 ### Como pegar valores dentro de caixas de texto e fazer cálculos com eles?
 
 #### Exemplo:
-```
+```javascript
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -613,7 +613,7 @@ Isso que dizer que ele não conseguiu ler o elemento ‘getElementById’ na lin
 
 ## Condicional Simples
 
-```
+```javascript
 var vel = 120
 if (vel > 60) {
 	console.log("Você ultrapassou o limite de velocidade. MULTADO!")
@@ -647,7 +647,7 @@ if (vel > 60) {
 
 ## Condicional Composta
 
-```
+```javascript
 var pais = 'EUA'
 if (pais == 'Brasil') {
 	console.log('brasileiro')
@@ -682,7 +682,7 @@ if (pais == 'Brasil') {
 
 ## Condicional Aninhada
 
-```
+```javascript
 var idade = 16
 if (idade < 16) {
 	console.log('Não pode votar.')
