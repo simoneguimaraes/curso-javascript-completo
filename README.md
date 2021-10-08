@@ -620,17 +620,6 @@ if (vel > 60) {
 }
 ```
 
-## Condicional Composta
-
-```
-var pais = 'EUA'
-if (pais == 'Brasil') {
-	console.log('brasileiro')
-} else {
-	console.log('estrangeiro')
-}
-```
-
 ### Exemplo "Sistema de Multas do DETRAN"
 ```javascript
 <head>
@@ -664,6 +653,15 @@ if (pais == 'Brasil') {
 </body>
 ```
 
+## Condicional Composta
 
+```
+var pais = 'EUA'
+if (pais == 'Brasil') {
+	console.log('brasileiro')
+} else {
+	console.log('estrangeiro')
+}
+```
   
 
