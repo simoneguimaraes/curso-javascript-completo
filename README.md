@@ -737,9 +737,9 @@ if (hora < 12) {
 ```
 
 ## Condicional Múltipla (Switch)
-Não funciona para todos os casos, como para testar intervalos. 
-Só funciona com números inteiros e strings.
-Serve para testar valores pontuais. 
+- Não funciona para todos os casos, como para testar intervalos. 
+- Só funciona com números inteiros e strings.
+- Serve para testar valores pontuais. 
 
 ```javascript
 var agora = new Date()
