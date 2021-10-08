@@ -663,5 +663,29 @@ if (pais == 'Brasil') {
 	console.log('estrangeiro')
 }
 ```
-  
+### 
+```javascript
+<body>
+    <h1>Sistema da Embaixada Brasileira</h1>
+    Digite o seu país de origem: <input type="text" name="textpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var txtpaisp = document.querySelector('input#txtpais')
+            var res = document.querySelector('div#res')
+            
+            var pais = String(txtpaisp.value).toLowerCase()
+            res.innerHTML = `Seu país de origem é ${pais}.`
+
+            if (pais == 'brasil') {
+                res.innerHTML = `<p>Você é <strong>brasileiro</strong> e está apto a solicitar a documentação.</p>`
+            } else {
+                res.innerHTML = `<p>Você é <strong>estrangeiro</strong> e não está apto a solicitar a documentação.</p>`       
+            }
+
+        }
+    </script>
+</body>
+```
 
