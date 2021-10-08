@@ -622,14 +622,6 @@ if (vel > 60) {
 
 ### Exemplo "Sistema de Multas do DETRAN"
 ```javascript
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DETRAN</title>
-
-</head>
-
 <body>
     <h1>Sistema de Multas</h1>
     Velocidade do carro: <input type="number" name='txtvel' id='txtvel'> <km>
@@ -665,25 +657,24 @@ if (pais == 'Brasil') {
 ```
 ### 
 ```javascript
-    <h1>Sistema da Embaixada Brasileira</h1>
-    Digite o seu país de origem: <input type="text" name="textpais" id="txtpais">
-    <input type="button" value="Verificar" onclick="verificar()">
-    <div id="res"></div>
-    <script>
-        function verificar() {
-            var txtpaisp = document.querySelector('input#txtpais')
-            var res = document.querySelector('div#res')
-            
-            var pais = String(txtpaisp.value).toLowerCase()
-            res.innerHTML = `Seu país de origem é ${pais}.`
+<h1>Sistema da Embaixada Brasileira</h1>
+Digite o seu país de origem: <input type="text" name="textpais" id="txtpais">
+<input type="button" value="Verificar" onclick="verificar()">
+<div id="res"></div>
+<script>
+function verificar() {
+        var txtpaisp = document.querySelector('input#txtpais')
+        var res = document.querySelector('div#res')
+           
+        var pais = String(txtpaisp.value).toLowerCase()
+        res.innerHTML = `Seu país de origem é ${pais}.`
 
-            if (pais == 'brasil') {
-                res.innerHTML = `<p>Você é <strong>brasileiro</strong> e está apto a solicitar a documentação.</p>`
-            } else {
-                res.innerHTML = `<p>Você é <strong>estrangeiro</strong> e não está apto a solicitar a documentação.</p>`       
-            }
-
+    if (pais == 'brasil') {
+        res.innerHTML = `<p>Você é <strong>brasileiro</strong> e está apto a solicitar a documentação.</p>`
+    } else {
+        res.innerHTML = `<p>Você é <strong>estrangeiro</strong> e não está apto a solicitar a documentação.</p>`       
         }
+    }
     </script>
 ```
 
