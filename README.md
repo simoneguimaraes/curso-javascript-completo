@@ -665,7 +665,6 @@ if (pais == 'Brasil') {
 ```
 ### 
 ```javascript
-<body>
     <h1>Sistema da Embaixada Brasileira</h1>
     Digite o seu país de origem: <input type="text" name="textpais" id="txtpais">
     <input type="button" value="Verificar" onclick="verificar()">
@@ -686,6 +685,5 @@ if (pais == 'Brasil') {
 
         }
     </script>
-</body>
 ```
 
