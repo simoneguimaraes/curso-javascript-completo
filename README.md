@@ -655,7 +655,8 @@ if (pais == 'Brasil') {
 	console.log('estrangeiro')
 }
 ```
-### 
+### Exemplo "Sistema da Embaixada Brasileira"
+
 ```javascript
 <h1>Sistema da Embaixada Brasileira</h1>
     Digite o seu país de origem: <input type="text" name="textpais" id="txtpais">
