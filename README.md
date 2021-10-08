@@ -609,6 +609,61 @@ Isso que dizer que ele não conseguiu ler o elemento ‘getElementById’ na lin
 </body>
 ```
 	
-# Módulo 4 – 
+# Módulo 4 – Condições
+
+## Condicional Simples
+
+```
+var vel = 120
+if (vel > 60) {
+	console.log("Você ultrapassou o limite de velocidade. MULTADO!")
+}
+```
+
+## Condicional Composta
+
+```
+var pais = 'EUA'
+if (pais == 'Brasil') {
+	console.log('brasileiro')
+} else {
+	console.log('estrangeiro')
+}
+```
+
+### Exemplo "Sistema de Multas do DETRAN"
+```javascript
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+
+</head>
+
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name='txtvel' id='txtvel'> <km>
+    <input type="button" value="Verificar" onclick='calcular()'>
+    <div id='res'>
+
+    </div>
+    
+    <script>
+        function calcular() {
+            var txtv = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel} km/h</strong>.`
+            if (vel > 60) {
+                res.innerHTML += `<p>Você está <strong>multado</strong> por excesso de velocidade</p>`
+            }
+            res.innerHTML += `Dirija sempre com cinto de segurança.</p>`
+        }
+    </script>
+</body>
+```
+
+
   
 
