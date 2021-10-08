@@ -609,7 +609,7 @@ Isso que dizer que ele não conseguiu ler o elemento ‘getElementById’ na lin
 </body>
 ```
 	
-# Módulo 4 – Condições
+# Módulo 4 – Condicional
 
 ## Condicional Simples
 
@@ -692,6 +692,23 @@ if (idade < 16) {
 	console.log('Voto obrigatório.')
 }
 ```
+
+### Exemplo "Hora do Dia"
+```javascript
+var agora = new Date()
+var hora = agora.getHours()
+
+console.log(`Agora são exatamente ${agora} horas.`)
+
+if (hora < 12) {
+    console.log('Bom dia!')
+} else if (hora < 18) {
+    console.log('Boa tarde!')
+} else {
+    console.log('Boa noite!')
+}
+```
+
 ### Exemplo "Consulta de Obrigatoriedade para Votação"
 
 ```javascript
@@ -719,3 +736,4 @@ if (idade < 16) {
         }
 ```
 
+## Condicional Múltipla
