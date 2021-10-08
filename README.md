@@ -680,3 +680,42 @@ if (pais == 'Brasil') {
     </script>
 ```
 
+## Condicional Aninhada
+
+```
+var idade = 16
+if (idade < 16) {
+	console.log('Não pode votar.')
+} else if (idade < 18 || idade >= 65) {
+	console.log('Voto opcional.')
+} else {
+	console.log('Voto obrigatório.')
+}
+```
+### Exemplo "Consulta de Obrigatoriedade para Votação"
+
+```javascript
+<h1>Consulta de Obrigatoriedade para Votação</h1>
+    Digite a sua idade: <input type="number" name="txtage" id="txtage">
+    <input type="button" value="Consultar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        
+        function calcular() {
+            var txtagep = document.querySelector('input#txtage')
+            var res = document.querySelector('div#res')
+            var idade = Number(txtagep.value)
+        
+            res.innerHTML = `<p>Sua idade é de <strong>${idade}</strong> anos.</p>`
+
+            if (idade < 16) {
+                res.innerHTML += `Você não pode votar.`
+            } else if (idade < 18 || idade >= 65) { 
+                res.innerHTML += `O seu voto é opcional.`
+            } else {
+                res.innerHTML += `O seu voto é obrigatório.`
+            }
+        }
+```
+
