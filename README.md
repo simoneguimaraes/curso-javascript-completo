@@ -5,7 +5,7 @@
 ## Aula 1 – Variáveis e Tipos Primitivos
 
 ### Como criar comentários?
-```javascript
+```
 //  → uma única linha de código
 ```
 
@@ -21,7 +21,7 @@ A memória do computador tem espaços delimitados para receber valores (assim co
 
 ### Como declarar variáveis no Javascript?
 
-```javascript
+```
 A vaga a1 = carro1
 (leia: a vaga a1 recebe o carro1)
 a1 = carro2
@@ -93,7 +93,7 @@ var nome = prompt(‘Qual é o seu nome’)
 alert(‘É um prazer te conhecer, ‘ + nome)  
 
 ### Como somar variáveis?
-```javascript
+```
 var num1 = prompt(‘Digite um número: ‘)
 var num2 = prompt(‘Digite outro número: ‘)
 var sum = num1 + num2
@@ -141,7 +141,7 @@ var s = ‘Javascript’
 ### Consegue formatar um número para que ele se pareça com um valor monetário?
 
 Exemplo:
-```javascript
+```
 <body>
   <script>
 	var nome = prompt("Qual é o seu nome?")
@@ -235,7 +235,7 @@ x = x – 1 →  --x  → 4
 ```
 
 #### Exemplos:
-```javascript
+```
 preço >= 200.50
 idade < 18
 curso == ‘Javascript’
@@ -243,7 +243,7 @@ n1 != n2
 ```
 
 #### Identidade:
-```javascript
+```
 5 == 5    → true
 5 == ‘5’  → true (é igual? O valor é igual.)
 5 === ‘5’  → falso (é idêntico? O valor e tipo não são iguais.)
@@ -252,12 +252,12 @@ n1 != n2
 ### Lógicos
 
 #### !  → negação
-```javascript
+```
 ! true →false
 ! false → true
 ```
 #### &&  → conjunção (E)
-```javascript
+```
 true && true → true
 true && false → false
 false && true → false
@@ -266,7 +266,7 @@ false && false → false
 A condição só me satisfaz se as duas forem verdadeiras.
 ```
 #### ||  → disjunção (OU)
-```javascript
+```
 true && true → true
 true && false → true
 false && true → true
@@ -275,7 +275,7 @@ false && false → false
 A condição me satisfaz se pelo menos um for verdadeiro.
 ```
 ##### Exemplo 1:
-```javascript
+```
 var a = 5
 var b = 8
 
@@ -286,7 +286,7 @@ a < b || b / 2 == 2
 true  ||  false → true
 ```
 #### Exemplo 2:
-```javascript
+```
 idade >= 15 && idade <= 17
 estado == ‘RJ’ || estado == ‘SP’
 salario > 2500 && sexo != ‘masculino’
@@ -309,7 +309,7 @@ teste ? true : false
 media >= 7 ? ‘Aprovado’ : ‘Reprovado’
 ```
 #### Exemplo 1:
-```javascript
+```
 var media = 9
 
 media >= 7 ? ‘Aprovado’ : ‘Reprovado’      
@@ -320,7 +320,7 @@ media >= 7 ? ‘Aprovado’ : ‘Reprovado’
 → ‘Reprovado’
 ```
 #### Exemplo 2:
-```javascript
+```
 var x = 8
 
 var res = x % 2 == 0 ? 5 : 9
@@ -329,7 +329,7 @@ como (x % 2 == 0) é true
 → 5
 ```
 #### Exemplo 3:
-```javascript
+```
 var idade = 19
 var entradaBar = idade >= 18 ? ‘Pode entrar.’ : ‘Não pode entrar.’
 entradaBar
