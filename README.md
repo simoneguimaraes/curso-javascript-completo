@@ -774,6 +774,8 @@ switch(diaSem) {
 # Módulo 5 – Repetições
 
 ## Repetições com Teste no Início
+- Ele faz o teste. Se for verdadeiro, ele executa o bloco. 
+- Ele vai continuar executando enquanto o teste for verdadeiro.
 
 ```javascript
 var contador = 1
@@ -806,8 +808,15 @@ function comerPizza(){
 ```
 
 ## Repetições com Teste no Final
+- Ele executa o bloco e depois ele faz o teste. Se a condição for verdadeira, ele executa o bloco novamente.
+- Até o teste dar negativo, ele vai executar novamente.
 
 ```javascript
+var contador = 1
+do {
+	console.log(`Passo ${contador}`)
+	contador++
+} while (contador <= 10)
 
 ```
 
