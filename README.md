@@ -820,12 +820,7 @@ do {
 
 ```
 
-### Exemplo " "
-```javascript
-
-```
-
-## Repetições com Controle
+## Repetições com Variável de Controle
 
 ```javascript
 
