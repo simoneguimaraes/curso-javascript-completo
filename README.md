@@ -823,14 +823,39 @@ do {
 ## Repetições com Variável de Controle
 
 ```javascript
-
+for (var contador = 1; contador <= 10; contador++) {
+    console.log(`Passo ${contador}`)
+}
 ```
-
-### Exemplo " "
+## Resumo
 ```javascript
+// estrutura while
 
+var contador = 1
+while (contador <= 10) {
+    console.log(`Passo ${contador}`)
+    contador++
+}
+
+// estrutura do while
+
+var contador = 1
+do {
+    console.log(`Passo ${contador}`)
+    contador++
+} while (contador <= 10)
+
+// estrutura for
+
+for (var contador = 1; contador <= 10; contador++) {
+    console.log(`Passo ${contador}`)
+}
 ```
+# Módulo 6 – 
 
+## 
+
+### Exemplo
 
 
 
