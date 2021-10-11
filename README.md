@@ -771,10 +771,40 @@ switch(diaSem) {
         console.log('Erro. Dia inválido.')
 }
 ```
+# Módulo 5 – Repetições
 
+## Repetições com Teste no Início
 
+```javascript
 
+```
 
+### Exemplo " "
+```javascript
+
+```
+
+## Repetições com Teste no Final
+
+```javascript
+
+```
+
+### Exemplo " "
+```javascript
+
+```
+
+## Repetições com Controle
+
+```javascript
+
+```
+
+### Exemplo " "
+```javascript
+
+```
 
 
 
