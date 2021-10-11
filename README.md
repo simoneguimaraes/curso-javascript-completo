@@ -776,12 +776,33 @@ switch(diaSem) {
 ## Repetições com Teste no Início
 
 ```javascript
-
+var contador = 1
+while(contador <= 10){
+	console.log(`Passo ${contador}`)
+	contador += 1
+	}
+}
 ```
 
-### Exemplo " "
+### Exemplo "Sistema Escolar"
 ```javascript
+var contador = 1
+while (contador < 6) {
+    console.log('---Sistema----')
+    console.log('Nome do aluno:')
+    console.log('Média do aluno:')
+    console.log('--------------')
+    contador++
+}
+```
 
+### Exemplo "Comer Pizza"
+```javascript
+function comerPizza(){
+	while(temFatia()){
+		comerFatia()
+	}
+}
 ```
 
 ## Repetições com Teste no Final
