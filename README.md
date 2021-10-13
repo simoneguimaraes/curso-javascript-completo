@@ -2,7 +2,7 @@
 
 # Módulo 1 – Comandos Básicos do Javascript
 
-## Aula 1 – Variáveis e Tipos Primitivos
+## Variáveis e Tipos Primitivos
 
 ### Como criar comentários?
 ```
@@ -166,7 +166,7 @@ Exemplo:
 </body>
 ```
 
-## Aula 7 – Operadores (parte 1)
+## Operadores (parte 1)
 	
 Quais são os operadores do Javascript?
 
@@ -342,7 +342,7 @@ entradaBar
 ```
 # Módulo 3 – Entendendo o DOM
 
-## Aula 9 – Introdução ao DOM
+## Introdução ao DOM
 	
 ### O que significa a sigla DOM? 
 Document Object Model
@@ -464,7 +464,7 @@ d.style.background = ‘blue’
 var d = window.document.querySelector(‘div.msg’)
 d.style.background = ‘blue’
 ```
-## Aula 10 – Eventos DOM
+## Eventos DOM
 
 ### Como funciona o DOM com Javascript?
 
@@ -851,9 +851,11 @@ for (var contador = 1; contador <= 10; contador++) {
     console.log(`Passo ${contador}`)
 }
 ```
-# Módulo 6 – Funções, Eventos e Vetores
+# Módulo 6 – Arrays, Funções e Objetos
 
-## Variáveis compostas
+
+## Arrays
+### Variáveis compostas
 - Variáveis simples: só conseguem armazenar **um valor** por vez.
 - Variáveis compostas: devem ser capazes de armazenar **vários valores em uma mesma estrutura**.
 - *Array = elemento [valor: chave]*
@@ -1021,4 +1023,16 @@ function gerarFatorial(num) {
 console.log(gerarFatorial(5))
 ```
 
+## Objetos
 
+
+
+## Próximos passos
+- Orientação a Objetos
+- Funções: Arrow functions, callbacks, funcoes anônimas
+- Modularização
+- Expressões regulares
+- JSON
+- AJAX
+- NodeJS
+- HTML5 e CSS3
