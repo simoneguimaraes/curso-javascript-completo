@@ -851,13 +851,35 @@ for (var contador = 1; contador <= 10; contador++) {
     console.log(`Passo ${contador}`)
 }
 ```
-# Módulo 6 – 
+# Módulo 6 – Funções, Eventos e Vetores
 
-## 
+## Variáveis compostas
+- Variáveis simples: só conseguem armazenar **um valor** por vez.
+- Variáveis compostas: devem ser capazes de armazenar **vários valores em uma mesma estrutura**.
+- *Array = elemento [valor: chave]*
 
 ### Exemplo
+```
+vaga a = [carro1, carro2, carro3]
+índices: 0, 1 e 2
+```
+```
+let num = [5, 8, 4]
+```
+## Adicionar Elemento
+```
+let num = [5, 8, 4]
+num[3] = 6
 
+num = [5, 8, 4, 6]
+```
+## Adicionar Elemento na Última Posição (.push)
+```
+let num = [5, 8, 4]
+num.push(7)
 
+num = [5, 8, 4, 7]
+```
 
 
 
