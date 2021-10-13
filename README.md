@@ -866,20 +866,42 @@ vaga a = [carro1, carro2, carro3]
 ```
 let num = [5, 8, 4]
 ```
-## Adicionar Elemento
+## Adicionar Elemento -> Array[índice]
 ```
 let num = [5, 8, 4]
 num[3] = 6
 
 num = [5, 8, 4, 6]
 ```
-## Adicionar Elemento na Última Posição (.push)
+## Mostrar um Elemento -> console.log(Array[índice])
+```
+let num = [5, 8, 4]
+console.log(num[1])
+
+num[1] = 8
+```
+
+## Adicionar Elemento na Última Posição -> .push()
 ```
 let num = [5, 8, 4]
 num.push(7)
 
 num = [5, 8, 4, 7]
 ```
+## Verificar o tamanho do Array -> .length
+```
+let num = [5, 8, 4]
+num.length = 3
+```
+## Colocar os elementos em ordem crescente -> .sort()
+```
+let num = [5, 8, 4]
+num.sort()
+
+num = [4, 5, 8]
+```
+
+
 
 
 
