@@ -924,7 +924,101 @@ let pos = num.indexOf(8)
 let pos = num.indexOf(9)
 -1 ---> quer dizer que não existe esse valor na Array
 ```
+## Funções
+São ações executadas assim que são chamadas ou em decorrência de algum evento.
+- Chamada
+- Entrada (Parâmetro)
+- Ação
+- Retorno
 
+```
+function acao(parametro){
+	return resultado
+}
+acao(5)
+```
+- Voce faz a chamada pra acao. 
+- O parametro vai valer 5 e voce vai ter um retorno do resultado.
 
+### Exemplo "Par ou Ímpar"
+``` javascript
+function parImpar(n) {
+	if (n % 2 == 0) {
+		return 'par'
+	} else {
+		return 'ímpar'
+	}
+}
+let resultado = parImpar(11)
+console.log(resultado)
+```
+### Exemplo "Soma"
+``` javascript
+function soma(num1, num2) {
+	return num1 + num2
+}
+let resultado = soma(2, 5)
+console.log(resultado)
+```
+- Se eu não passar um dos parâmetros, o programa vai considerar aquele parâmetro como *undefined*. 
+- *undefined + number = NaN*
+
+### Para isso nao ocorrer, voce pode declarar os parametros como opcionais:
+``` javascript
+function soma(num1 = 0, num2 = 0) {
+	return num1 + num2
+}
+let resultado = soma(2)
+console.log(resultado)
+```
+### Declarar uma função dentro de uma variável
+``` javascript
+let variavel = function(num1) {
+	return num1 * 2
+}
+console.log(variavel(5))
+```
+
+### Exemplo "Fatorial"
+``` javascript
+function gerarFatorial(num) {
+	let fatorial = 1
+	for(let contador = num; contador > 1; contador--) {
+		fatorial = fatorial * contador
+	}
+	return fatorial
+}
+console.log(gerarFatorial(5))
+```
+## Arrow function
+Antes:
+```
+hello = function() {
+  return "Hello World!";
+}
+```
+Com Arrow Function: 
+```
+hello = () => {
+  return "Hello World!";
+}
+```
+Arrow Functions Return Value by Default:
+```
+hello = () => "Hello World!";
+```
+## Recursividade
+
+### Exemplo "Fatorial"
+``` javascript
+function gerarFatorial(num) {
+	if (num == 1) {
+		return 1
+	} else {
+		return num * gerarFatorial(num-1)
+	}
+}
+console.log(gerarFatorial(5))
+```
 
 
