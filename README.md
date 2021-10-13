@@ -1025,7 +1025,24 @@ console.log(gerarFatorial(5))
 
 ## Objetos
 
-
+Exemplo:
+```
+let amigo = { 
+nome: 'José', 
+sexo: 'M',
+idade: 22, 
+peso: 86,
+engordar(p = 0){                            ---> método
+	console.log('Engordou')
+	this.peso += p
+}                   			
+}
+```
+### Como acessar um atributo
+```
+amigo.engordar(2)
+console.log(`${amigo,nome} pesa ${amigo,peso}`)
+```
 
 ## Próximos passos
 - Orientação a Objetos
